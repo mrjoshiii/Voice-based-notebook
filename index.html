@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Notes app</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <div class="container">
+
+            <h1>Time saving way to keep your notes <img src="/sticky-notes.png" alt="" srcset=""></h1>
+            <p class="page-description">A web application that allows you to take notes by recording your voice.</p>
+
+            <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In Google Chrome.</h3>
+
+            <div class="app"> 
+                <h3>Start adding your new notes here.. <img src="/microphone-black-shape.png" alt="" srcset=""></h3>
+                <div class="input-single">
+                    <textarea id="note-textarea" class ="textfield" placeholder="Create a new note by typing or by using voice recognition." rows="6"></textarea>
+                </div>         
+                <button class = 'btn' id="start-record-btn" title="Start Recording">Start</button>
+                <button class = 'btn' id="pause-record-btn" title="Pause Recording">Pause</button>
+                <button class = 'btn' id="save-note-btn" title="Save Note">Save Note</button>   
+                <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p>
+                
+                <h3>My Notes</h3>
+                <ul id="notes">
+                    <li>
+                        <p class="no-notes">You don't have any notes here.Start by typing or click to start the voice recognition.</p>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>
+
+

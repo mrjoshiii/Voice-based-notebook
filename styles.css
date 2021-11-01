@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height : auto ;
+    width : 100% ;
+    text-align: center;
+    margin: auto;
+    /* background: url('/marten-bjork-rH8O0FHFpfw-unsplash.jpg'); */
+    background: url('https://images.unsplash.com/photo-1615715757401-f30e7b27b912?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG9mZiUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 300vh 140vh; */
+    background-size: cover;
+
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+p {
+    color: #444;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.container {
+    width : 100% ;
+    margin: 0 auto;
+    padding: 100px 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-weight: bolder;
+    /* color:white ; */
+}
+
+.page-description {
+    font-size: 1.1rem;
+    margin: 0 auto;
+    
+}
+
+.no-browser-support {
+    display: none;
+    font-size: 1.2rem;
+    color: #1410fb;
+    margin-top: 35px;
+}
+
+.app {
+    margin: 40px auto;
+}
+.btn
+{
+   background-color: black ;
+   color : #d5d5d5 ;
+   transition: all 0.2s linear ease-in;   
+}
+.btn:hover{
+    color: white ;
+}
+#note-textarea {
+    margin: 20px 0;
+}
+.textfield{
+    border : 2px solid black ;
+}
+#recording-instructions {
+    margin: 15px auto 60px;
+}
+
+#notes {
+    padding-top: 20px;
+}
+
+.note .header {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.note .delete-note,
+.note .listen-note {
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.note .content {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 25px;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+}   
+
+
